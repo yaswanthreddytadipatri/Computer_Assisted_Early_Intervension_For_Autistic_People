@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scenario-Based Questions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f6e9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0069d9;
+    }
+  </style>
+  <body>
+    <h1>Scenario-Based Questions for Autistic Students</h1>
+    <form id="question-form" action="/bio_data" method="post">
+      <div class="question" id="question1">
+        <h2>Scenario 1: School Cafeteria</h2>
+        <p>
+          You're in the school cafeteria during lunchtime, and it's really
+          noisy. You're finding it hard to concentrate on your food because of
+          all the noise. What could you do to make it easier for yourself?
+        </p>
+        <textarea
+          name="answer1"
+          if = "answer1"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question2">
+        <h2>Scenario 2: Birthday Party</h2>
+        <p>
+          You're at a birthday party, and you see a group of kids playing a game
+          you don't know how to play. You want to join in, but you're not sure
+          how to ask. What could you do?
+        </p>
+        <textarea
+          name="answer2"
+          id = "answer2"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+
+      <div class="question" id="question3">
+        <h2>Scenario 3: Behavioral Observation</h2>
+        <p>
+          During the assessment session, the clinician observes the individual's behavior across various domains, including social interaction, communication, play, and repetitive behaviors. They note any atypical behaviors or patterns that are consistent with autism spectrum disorder.
+        </p>
+        <textarea
+          name="answer3"
+          id = "answer3"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question4">
+        <h2>Scenario 4: Standardized Assessment Tools</h2>
+        <p>
+          The clinician administers standardized assessment tools, such as the Autism Diagnostic Observation Schedule (ADOS) and the Autism Diagnostic Interview-Revised (ADI-R), to gather objective data about the individual's symptoms and behaviors related to autism. These tools provide structured guidelines for observing and evaluating social communication skills, repetitive behaviors, and other features of autism.
+        </p>
+        <textarea
+          name="answer4"
+          id = "answer4"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question5">
+        <h2>Scenario 5: Developmental and Cognitive Assessment</h2>
+        <p>
+          Depending on the individual's age and presenting concerns, the clinician may conduct developmental and cognitive assessments to evaluate intellectual functioning, language skills, adaptive behavior, and other developmental domains. This helps rule out other developmental disorders and provides a comprehensive understanding of the individual's strengths and challenges.
+
+        </p>
+        <textarea
+          name="answer5"
+          id="answer5"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question6">
+        <h2>Scenario 6: Medical Evaluation</h2>
+        <p>
+          he clinician may recommend a medical evaluation to rule out underlying medical conditions or genetic syndromes that may be associated with autism or present with similar symptoms. This may involve reviewing medical records, conducting physical examinations, and ordering relevant laboratory tests or imaging studies.
+
+        </p>
+        <textarea
+          name="answer6"
+          id="answer6"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question7">
+        <h2>Scenario 7: Collateral Information</h2>
+        <p>
+          The clinician may request information from other sources, such as teachers, therapists, or other professionals who work with the individual, to gather additional insights into their behavior and functioning across different settings.
+        </p>
+        <textarea
+          name="answer7"
+          id ="answer7"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question8">
+        <h2>Scenario 8: Cultural Considerations</h2>
+        <p>
+          Clinicians consider cultural factors that may influence the presentation of autism and the interpretation of behaviors. They strive to conduct assessments in a culturally sensitive manner and may seek input from cultural consultants or interpreters if necessary.
+
+        </p>
+        <textarea
+          name="answer8"
+          id="answer8"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question9">
+        <h2>Scenario 9: Diagnostic Formulation</h2>
+        <p>
+          Based on the information gathered from the clinical interview, behavioral observation, standardized assessments, and collateral sources, the clinician formulates a diagnostic impression. They determine whether the individual meets the criteria for autism spectrum disorder according to established diagnostic criteria, such as those outlined in the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) or the International Classification of Diseases (ICD-10).
+
+        </p>
+        <textarea
+          name="answer9"
+          id="answer9"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <div class="question" id="question10">
+        <h2>Scenario 10: Empathy</h2>
+        <p>
+          You notice that one of your classmates is sitting alone at lunch and
+          looks sad. What could you do to show them kindness and make them feel
+          better?
+        </p>
+        <textarea
+          name="answer10"
+          id="answer10"
+          rows="5"
+          placeholder="Enter your answer here..."
+        ></textarea>
+      </div>
+      <button type="submit">Submit Answers</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+  <script>
+    // const form = document.getElementById("question-form");
+
+    // form.addEventListener("submit", function (event) {
+    //   event.preventDefault(); // Prevent default form submission
+
+    //   // Access form data
+    //   const answers = {};
+    //   for (const element of form.elements) {
+    //     if (element.tagName === "TEXTAREA") {
+    //       answers[element.name] = element.value;
+    //     }
+    //   }
+
+    //   // Do something with the answers, e.g., display them as an alert
+    //   let message = "";
+    //   for (const answer in answers) {
+    //     message += `Question ${answer.slice(-1)}: ${answers[answer]}\n`;
+    //   }
+
+
+    //   // Alternatively, you could submit the answers to a server using AJAX
+    // });
+  </script>
+</html>
